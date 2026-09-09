@@ -1,52 +1,53 @@
 # Awesome X Articles
 
 > 长文精选，来自 X（Twitter）收藏夹的人肉 curation。
-> 只收值得读 10 分钟以上的长文/长推文串，不追热点，不收碎片观点。
+> 只收值得读 10 分钟以上的长文，不追热点，不收碎片观点。
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-## 为什么有这个仓库
+## 这是什么
 
-信息流里的好内容死了太快——一条精心写的长推，三天就被算法埋掉。
-这里是我在 X 上逐条收藏、逐条读完、认为值得长期留存的长文集合。
+X 信息流里的好内容死得太快——一条精心写的长文，三天就被算法埋掉。
+这里是我在 X 上逐条收藏、逐条读完、认为值得长期留存的长文离线库：**65 篇文章 + 646 张配图全部本地化**，可离线完整阅读。
 
-每条都带一句话点评：它解决了什么问题、为什么值得你的 10 分钟。
+- 每篇文章保留原始 Markdown 全文与作者署名，图片在 `assets/` 目录
+- 完整索引见 [INDEX.md](INDEX.md)，含 1 篇失效链接的记录见 [MISSING-ARTICLES.md](MISSING-ARTICLES.md)
 
 ## 分类
 
-<!-- 分类体系随收藏内容演进，先立骨架 -->
+| 分类 | 篇数 | 目录 |
+|---|---|---|
+| 大模型与提示词 | 9 | `01-llm-and-prompts/` |
+| Agent 与自动化 | 13 | `02-agents-and-automation/` |
+| AI 产品与开发实践 | 3 | `03-ai-products-and-development/` |
+| AI 内容与视觉创作 | 5 | `04-ai-content-and-visual/` |
+| 商业化与变现 | 11 | `05-business-and-monetization/` |
+| 增长、获客与营销 | 9 | `06-growth-and-marketing/` |
+| 效率工具与知识管理 | 2 | `07-productivity-and-knowledge/` |
+| 基础设施与工程技术 | 13 | `08-infrastructure-and-engineering/` |
 
-- [AI Agents 与 Agent 工程](#ai-agents-与-agent-工程) — Agent 架构、多智能体、工具调用、上下文工程
-- [独立开发与变现](#独立开发与变现) — indie hacking、产品验证、定价、增长
-- [FDE 与企业 AI 落地](#fde-与企业-ai-落地) — Forward Deployed Engineer、企业内部提效、交付方法论
-- [硬件与本地部署](#硬件与本地部署) — 本地 LLM、显存/量化、消费级硬件跑模型
-- [写作与个人品牌](#写作与个人品牌) — 长文写作、内容策略、build in public
+分类口径：按文章主题词单一归类，优先级 Agent/自动化 → 商业化/变现 → 增长/营销 → 内容/视觉 → 大模型/提示词 → AI 产品/开发 → 效率/知识管理 → 基础设施/工程。
 
-## AI Agents 与 Agent 工程
+## 文章结构
 
-<!-- 格式：- [标题](链接) — **作者 @handle** · 一句话点评：为什么值得读 -->
-
-## 独立开发与变现
-
-## FDE 与企业 AI 落地
-
-## 硬件与本地部署
-
-## 写作与个人品牌
+```
+<分类>/<标题>--<X文章ID>/
+  ├── article.md   # 原文 Markdown（含作者 handle 与原文链接）
+  └── assets/      # 正文配图（本地化）
+```
 
 ## 收录标准
 
-1. 长文或长推文串（不是碎片观点、不是新闻转述）
-2. 有可复用的方法论、数据或一手经验（不是「我觉的」）
+1. 长文（不是碎片观点、不是新闻转述）
+2. 有可复用的方法论、数据或一手经验
 3. 读完能带走点什么——一个决策框架、一个踩坑记录、一个反直觉结论
 
-## 格式约定
+## 维护说明
 
-```markdown
-- [文章标题](链接) — **作者 @handle**
-  点评：一句话说清它值在哪。
-```
+由 [Jacky](https://github.com/JackyCufe) 维护。收藏来自个人 X 账号的 Bookmarks，导出工具链：Chrome 登录态 + 文章正文提取 + 图片本地化。
+
+原文版权归原作者所有，本仓库仅作个人收藏与学习用途的离线镜像。
 
 ## License
 
-[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) — 点评部分原创，原文版权归原作者所有。
+[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) — 索引与组织方式原创；文章原文版权归原作者所有。
